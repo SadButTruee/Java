@@ -1,0 +1,7 @@
+1. Create exceptions: My ArraySizeException (incorrect
+array size), and My Array Data Exception (there is something wrong in the array cell);
+2. Write a method whose input is a two-dimensional string array (String[][]) with a size of 4×4). When submitting an array of a different size, an exception must be thrown
+MyArraySizeException.
+3. Next, the method should go through all the elements of the array, convert to int and sum. If the conversion failed in some element of the array (for example, in
+the cell contains a symbol or text instead of a number), the My Array Data Exception exception should be thrown with details in which cell the incorrect data lies. The calculation of data for this matrix is terminated.
+4. In the main() method, you need to call the received method, handle possible exceptions MySizeArrayException and MyArrayDataException and output the calculation result.

@@ -1,0 +1,10 @@
+1. Write a method that swaps two array elements (the array can be of any reference type).
+2. Write a method that converts an array to an ArrayList.
+3. Task:
+a. Classes Fruit -> Apple, Orange are given.
+b. Class Box, in which you can put fruits. Boxes are conventionally sorted by type of fruit, so you can't put both apples and oranges in one box.
+c. An ArrayList can be used to store fruit inside the box.
+d. Write a getWeight() method that calculates the weight of the box. Set the weight of one fruit and their number: the weight of an apple is 1.0f, an orange is 1.5f (units of measurement are not important).
+e. Inside the Box class, write a Compare method that allows you to compare the current box with the one that will be served in Compare as a parameter. True if their masses are equal, False otherwise. You can compare boxes with apples and oranges.
+f. Write a method that allows you to pour fruit from the current box into another. Remember about sorting fruits: you can not pour apples into a box with oranges. Accordingly, there is no fruit left in the current box, and objects that were in the first one are thrown into the other. g.
+Do not forget about the method of adding fruit to the box.

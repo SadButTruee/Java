@@ -1,5 +1,13 @@
 import java.util.*;
 
+//        1 Create an array with a set of words (10-20 words, there should be repeated ones).
+//        Find and output a list of unique words that make up the array (we don't count duplicates).
+
+//        2 Write a simple Phone class A directory that stores a list of surnames and phone numbers.
+//        You can add entries to this phone directory using the add() method, and use the get() method
+//        to search for a phone number by last name. It should be noted that there may be several phones
+//        under one surname (in the case of namesakes), then when requesting such a surname, all phones should be displayed.
+
 class PhoneBook {
     private Map<String, List<Integer>> map = new HashMap<>();
 

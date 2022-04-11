@@ -4,6 +4,14 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 
+// 1. Transfer the code below to a new project where we organize races.
+// All participants must start at the same time, despite different preparation times.
+// More than half of the participants cannot enter the tunnel at the same time (convention).
+// Try to synchronize all this.
+// When everyone completes the race, you need to issue an announcement about the end.
+// You can adjust classes (including the machine constructor) and add class objects from the util.concurrent package.
+// It is absolutely necessary to announce the winner of the race, there should be only one, and this is the participant who finished the last stage first.
+
 class Car implements Runnable {
     private static int CARS_COUNT = 0;
     private static Object monitor = new Object();

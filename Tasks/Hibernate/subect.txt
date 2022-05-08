@@ -1,0 +1,13 @@
+1 The database must be able to store information about customers (id, name)
+and products (id, name, cost);
+
+2 Each buyer has his own set of purchased goods, one purchase of one product is
+a separate entry in the table (no need to group);
+
+3 Write a test console application (just Scanner and System.out.println()), which
+will allow you to execute the commands:
+   //showProductsByPerson buyer's name - see which products the customer bought;
+   //findPersonsByProductTitle product name - which customers bought a certain product;
+   //removePerson(removeProduct) element name - to provide an opportunity to remove
+         goods/buyers from the database,
+   //buy buyer's name of the product name - to organize the possibility of “buying goods".

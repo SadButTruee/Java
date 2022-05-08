@@ -1,0 +1,43 @@
+
+1)create table person
+(
+id serial primary key,
+name text not null unique
+);
+
+insert into person (name) values
+('person_1'),
+('person_2'),
+('person_3'),
+('person_4'),
+('person_5'),
+('person_6');
+
+
+
+2) create table product
+(
+id serial primary key,
+name text not null unique,
+price double precision not null
+);
+
+insert into product(name, price) values
+('product_1',1000),
+('product_2',2000),
+('product_3',3000),
+('product_4',4000),
+('product_5',5000),
+('product_6',6000);
+
+
+3) create table person_product
+(
+person_id int not null references person(id) on delete cascade,
+product_id int not null references product(id) on delete cascade,
+price double precision
+);
+
+create index person_name_indx on person(name);
+create index product_name_indx on product(name);
+
